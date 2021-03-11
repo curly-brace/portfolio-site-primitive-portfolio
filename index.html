@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,900i|Roboto+Slab:400,700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <title>Портфолио</title>
+</head>
+<body>
+    <header id="home">
+        <h1>Логотип или название сайта</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam error, eius a in provident qui, dicta cumque nulla exercitationem tempora, reprehenderit adipisci ad animi delectus enim dolor.</p>
+        <a class="btn" href="#">свяжитесь со мной</a>
+        <nav id="header">
+            <ul>
+                <li>
+                    <a href="#home">Домой</a>
+                </li>
+                <li>
+                    <a href="#about">Обо мне</a>
+                </li>
+                <li>
+                    <a href="#skills">Навыки</a>
+                </li>
+                <li>
+                    <a href="#portfolio">Портфолио</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="about" id="about">
+        <h2>Обо мне</h2>
+        <div class="about-content">
+            <div class="about-left">
+                <h3 class="about-title">Мои цели</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsam, earum quas porro voluptates maxime qui excepturi. Beatae voluptas distinctio excepturi quae cupiditate et ex numquam tempora, rem, vitae ab! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi modi tenetur, animi error porro nesciunt natus suscipit autem provident officiis illo dolores blanditiis eligendi veniam aliquid deleniti, praesentium doloribus consequuntur!</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse voluptatum illum adipisci earum, velit exercitationem ex nulla accusantium ut, quas quasi quia ullam, tenetur harum autem rem nemo pariatur facilis! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex ut unde ipsum est ipsa dolorum repellendus veritatis vel earum! Nulla aut ullam voluptates officiis explicabo assumenda neque magnam distinctio eveniet? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque possimus vero consectetur cupiditate consequatur quasi sed inventore esse asperiores! Eum mollitia quos architecto, expedita ipsa non placeat est pariatur animi.</p>
+            </div>
+            <div class="about-right">
+                <h3 class="about-title">Статы</h3>
+                <div class="stats-icons">
+                    <div class="stats-item">
+                        <div class="stats-icon">@</div>
+                        <div class="stats-container">
+                            <div class="stats-title">название</div>
+                            <div class="stats-descr">описание</div>
+                        </div>
+                    </div>
+                    <div class="stats-item">
+                        <div class="stats-icon">@</div>
+                        <div class="stats-container">
+                            <div class="stats-title">название</div>
+                            <div class="stats-descr">описание</div>
+                        </div>
+                    </div>
+                    <div class="stats-item">
+                        <div class="stats-icon">@</div>
+                        <div class="stats-container">
+                            <div class="stats-title">название</div>
+                            <div class="stats-descr">описание</div>
+                        </div>
+                    </div>
+                    <div class="stats-item">
+                        <div class="stats-icon">@</div>
+                        <div class="stats-container">
+                            <div class="stats-title">название</div>
+                            <div class="stats-descr">описание</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <h2>Навыки</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <div class="skill-icon">1</div>
+                <div class="skill-title">описание</div>
+            </div>
+            <div class="skill">
+                <div class="skill-icon">2</div>
+                <div class="skill-title">описание</div>
+            </div>
+            <div class="skill">
+                <div class="skill-icon">3</div>
+                <div class="skill-title">описание</div>
+            </div>
+            <div class="skill">
+                <div class="skill-icon">4</div>
+                <div class="skill-title">описание</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <h2>Портфолио</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius natus saepe in illum autem voluptate ex dicta aspernatur vel nihil! Tempora similique magni doloremque exercitationem architecto veritatis voluptate quaerat sed? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam quos quam facere vero harum. Accusantium, eveniet veritatis sit minima similique dolorem distinctio saepe deleniti exercitationem.</p>
+        <a class="btn btn-dark" href="#">посмотреть подробнее</a>
+    </section>
+
+    <footer>
+        <span>копирайт</span>
+        <span>&COPY;Я</span>
+        <span>2021</span>
+    </footer>
+
+    <script>
+        // When the user scrolls the page, execute myFunction
+        window.onscroll = function() { classSwitch() };
+
+        // Get the header
+        var header = document.getElementById("header");
+
+        // Get the offset position of the navbar
+        var sticky = header.offsetTop;
+
+        // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function classSwitch() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        } 
+    </script>
+</body>
+</html>
